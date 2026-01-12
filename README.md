@@ -1,19 +1,27 @@
-🧩 Overview
-The Login component is a simple React functional component that provides a basic login form with email and password fields. It uses React’s useState hook for state management and includes form validation to ensure all fields are filled before submission.
+# 🧩 Overview
 
-🚀 Features:
-✅ Two controlled input fields: Email and Password
-✅ Client-side validation (checks for empty fields)
-✅ Custom onLogin callback for handling login data
-✅ Clean and minimal JSX structure
+The `Login` component is a simple React functional component that provides a basic login form with email and password fields. It uses React's `useState` hook for state management and includes client-side validation.
 
-🧠 How it Works:
+
+## 🚀 Features
+
+- Two controlled input fields: Email and Password
+- Client-side validation (checks for empty fields)
+- Custom `onLogin` callback for handling login data
+- Clean and minimal JSX structure
+
+
+## 🧠 How it works
+
 1. The user enters their email and password.
 2. When the form is submitted:
-   a) If either field is empty → an alert "All fields are required" is shown.
-   b) Otherwise → the onLogin callback is triggered with { email, password } as the argument.
+   - If either field is empty → an alert "All fields are required" is shown.
+   - Otherwise → the `onLogin` callback is triggered with `{ email, password }` as the argument.
 
-🛠️ Usage
+
+## 🛠️ Usage
+
+```jsx
 import React from "react";
 import Login from "./Login";
 
@@ -32,10 +40,19 @@ function App() {
 }
 
 export default App;
-📦 Props
-Prop Name	Type	Required	Description
-onLogin	Function	✅ Yes	Callback function triggered on successful login with { email, password } as argument.
-🧱 Component Code
+```
+
+
+## 📦 Props
+
+| Prop Name | Type     | Required | Description                                                                 |
+|-----------|----------|:--------:|-----------------------------------------------------------------------------|
+| `onLogin` | Function |   ✅ Yes | Callback function triggered on successful login with `{ email, password }` |
+
+
+## 🧱 Component code
+
+```jsx
 import { useState } from "react";
 
 function Login({ onLogin }) {
@@ -77,7 +94,13 @@ function Login({ onLogin }) {
 }
 
 export default Login;
-🧾 Example Output
+```
+
+
+## 🧾 Example output
+
 When you submit the form:
 
+```
 User Logged In: { email: "user@example.com", password: "12345" }
+```
