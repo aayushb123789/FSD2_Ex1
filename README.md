@@ -1,5 +1,4 @@
-# React Login + Upload 🚀
-![Project Banner](./assets/banner.png)
+# React Login Page 🚀
 
 A small, modern React app demonstrating a polished login page with file upload. Built for clarity, accessibility, and easy customization — great as a starter or UI demo.
 
@@ -186,3 +185,4 @@ Contact ✉️
 - Reach me at: aayushb6973@gmail.com
 
 ---
+
